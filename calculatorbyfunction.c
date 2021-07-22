@@ -39,15 +39,14 @@ int main()
                break;
        
         case 4: printf("\n thanks for using our service"); 
+                 k=1;
                 break;
                 
        //default : printf("wrong input"); break;      
     }
     
     
-   printf("u want to continue (y/n) ??");
-     scanf("%c",&p);
-    if(p=='n' || p=='N'){k=1;}
+   
     
     }while(k!=1);
  return 0;
