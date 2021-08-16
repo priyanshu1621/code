@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+
+float add(float a,float b){ return a+b;}
+float sub(float a,float b){ return a-b;}
+float multiply(float a,float b){ return a*b;}
+float divide(float a,float b){ return a/b;}
+
+
+int main()
+{
+    float (*ptr[4])(float,float) = {add,sub,multiply,divide};
+    int choise;
+    float a,b;
+    printf("\nEnter the choise... o-Add, 1-sub,2-multi,4-divide");
+    scanf("%d",&choise);
+    printf("\nEnter the two number:");
+    scanf("%f %f",&a,&b);
+   printf("%f",ptr[choise](a,b));
+    
+}
