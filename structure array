@@ -1,0 +1,33 @@
+#include <stdio.h>
+struct car{
+    int engine;
+    int seating_capacity;
+    float mileage;
+};
+int main(){
+  int i;
+  struct car c[2];
+  for(i=0;i<2;i++){
+      printf("Enter the car %d detail\n:",i+1);
+      printf("Enter the car engine detail:");
+      scanf("%d",&c[i].engine);
+      printf("\nEnter the car seating capacity:");
+      scanf("%d",&c[i].seating_capacity);
+      printf("\nEnter the car mileage:");
+      scanf("%f",&c[i].mileage);
+  }
+  printf("\n");
+  for(i=0;i<2;i++){
+      printf("\nEnter the car %d detail:",i+1);
+      
+      printf("\nEnter the car engine detail %d :",c[i].engine);
+     
+      printf("\nEnter the car seating capacity: %d",c[i].seating_capacity);
+      
+      printf("\nEnter the car mileage:%d ",c[i].mileage);
+      
+  }
+  
+    return 0;
+    
+}
