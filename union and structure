@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include<stdlib.h>
+union abc{
+    int p;
+    char c;
+    double pj;
+    float jk;
+};
+
+int main()
+{   
+    union abc a ={13} , *j= &a ;
+    printf("%d",*j);
+    // struct abc* a = (struct abc*)malloc(sizeof(struct abc));
+    // a->p;
+    // a->b;
+    // printf("%p\n",&a->p);
+    // printf("%p",&a->b);
+
+ //printf("%ld",sizeof(union abc));
+    // a.p = 12;
+    // printf("%d\n",a.p );
+    // printf("%d\n",a.b );
+    // printf("%d\n",a.c );
+
+
+    return 0;
+}
+
+
+/*
+#include <stdio.h>
+#include<stdlib.h>
+struct abc{
+    int p;
+    int b;
+    char c;
+};
+int main()
+{   
+    // union abc *a = (union abc*)malloc(sizeof(union abc));
+    // a->p;
+    // a->b;
+    // printf("%p\n",&a->p);
+    // printf("%p",&a->b);
+    
+    struct abc a = {12};
+    struct abc *j = &a;
+    printf("%d\n",*j );
+    
+
+    return 0;
+}
+*/
