@@ -1,0 +1,11 @@
+#include<stdio.h>
+// #define STRING "%s"
+// #define pg "Priyanshu Gaur"
+// int main (){
+//     printf(STRING ,pg);
+//     return 0 ;
+// }
+
+int main(){
+    if(printf("Priyanshu Gaur")){}
+}
